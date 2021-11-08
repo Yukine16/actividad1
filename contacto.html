@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!--LAURA MORENO SUAREZ 1 DAMB--> 
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="shortcut icon" href="../imagenes/favicon-96x96.png" type="image/ico"/>
+</head>
+<body>
+    <header>
+        <div>
+            <ul>
+                <li><a href="../index.html">Tim Berners-Lee</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="precio.html">Tabla de precios</a></li>
+                <li><a href="contacto.html">Contactame</a></li>
+            </ul>
+        </div>
+        <div>
+            <img src="../imagenes/imagen-menu.png" usemap="#formas">
+            <map name="formas">
+                <area shape="rect" coords="15,44,107,132" href="../index.html">
+                <area shape="circle" coords="173,87,47" href="portfolio.html">
+                <area shape="polygon" coords="231,135,288,43,344,135" href="precio.html" />
+                <area shape="rect" coords="352,33,438,139" href="contacto.html">
+            </map>
+        </div>
+    </header>
+    <main>
+        <h1>Contactame</h1>
+        <h2>Formulario de contacto</h2>
+        <form action="contactar.php" method="post">
+            <fieldset>
+                <legend>Datos personales</legend>
+                Nombre: 
+                <input type="text" name="nombre" required/><acronym title="campo obligatorio">*</acronym>
+                <br/>
+                Apellidos:
+                <input type="text" name="apellidos" required/><acronym title="campo obligatorio">*</acronym>
+                <br/>
+                Email
+                <input type="email" name="correo" required/><acronym title="campo obligatorio">*</acronym>
+                <br/>
+                Fecha de nacimiento:
+                <input type="date" name="fecha">
+                <br/>
+                Edad:
+                <input type="number" name="numero" min="10" max="100">
+                <br/>
+                Sexo:
+                <input type="radio" name="sexo" value="Hombre" checked="checked"/>Hombre <input type="radio" name="sexo" value="Mujer"/> Mujer
+                <br/>
+                <label for="pais">Pais</label>
+                <select id="pais" name="pais">
+                    <option value="" selected="selected">-Selecciona-</option>
+                    <option value="España">España</option>
+                    <option value="Italia">Italia</option>
+                    <option value="corea">Corea</option>
+                    <option value="japom">Japon</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Otros Datos</legend>
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                <br/>
+                <label for="foto">Adjunta una foto</label>
+                <input type="file" name="fichero"/>
+            </fieldset>
+            <input name="condiciones" type="checkbox" value="condiciones" checked/>He leido las condiciones..
+            <br/>
+            <input type="reset" name="borrar" value="Limpiar"/>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <div class="side-content">
+    <h2>Centro de referencia</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.7795771560354!2d-16.28546224955359!3d28.45606029871135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cceee5a8035f%3A0xab9f2a74d9e68b51!2sCIFP%20C%C3%A9sar%20Manrique!5e0!3m2!1ses!2ses!4v1636333191118!5m2!1ses!2ses" width="40%" height="208" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div>       
+    <footer>
+        © 2021 <a href="../index.html">www.MiSito.com</a>
+    </footer>
+    </div>
+    <div>
+        <br/>
+    </div>
+</body>
+</html>
